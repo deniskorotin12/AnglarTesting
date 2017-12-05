@@ -1,1 +1,263 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body{
+font-family: 'Roboto', sans-serif;
+margin: 0;
+}
+@font-face {
+font-family: 'Material Icons';
+font-style: normal;
+font-weight: 400;
+src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+src: local('Material Icons'),
+local('MaterialIcons-Regular'),
+url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+font-family: 'Material Icons';
+font-weight: normal;
+font-style: normal;
+font-size: 24px;  /* Preferred icon size */
+display: inline-block;
+line-height: 1;
+text-transform: none;
+letter-spacing: normal;
+word-wrap: normal;
+white-space: nowrap;
+direction: ltr;
+
+/* Support for all WebKit browsers. */
+-webkit-font-smoothing: antialiased;
+/* Support for Safari and Chrome. */
+text-rendering: optimizeLegibility;
+
+/* Support for Firefox. */
+-moz-osx-font-smoothing: grayscale;
+
+/* Support for IE. */
+font-feature-settings: 'liga';
+}
+.md-18 { font-size: 18px; }
+.md-24 { font-size: 24px; }
+.md-36 { font-size: 36px; }
+.md-48 { font-size: 48px; }
+
+.mat-toolbar.mat-primary.mat-toolbar-single-row{
+  height: 70px;
+}
+
+
+
+.mat-checkbox.md-24{
+font-size: 24px;
+padding: 0px;
+}
+.todo-item{
+padding: 15px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+.delete-item{
+opacity: 0.05;
+}
+.delete-item:hover{
+opacity: 1;
+  background: transparent;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+height: 100vh;
+color: #757575;
+background-color: #fafafa;
+}
+
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+li{
+text-decoration: none;
+color: white;
+}
+button {
+background: 0 0;
+border: none;
+border-radius: 2px;
+color: #757575;
+position: relative;
+height: 36px;
+margin: 0;
+min-width: 64px;
+padding: 0 16px;
+display: inline-block;
+font-family: 'Roboto', Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 0;
+overflow: hidden;
+will-change: box-shadow;
+transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+outline: none;
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+line-height: 36px;
+vertical-align: middle;
+}
+
+button:hover {
+background-color: rgba(158,158,158,.2);
+}
+
+button:active {
+background-color: rgba(158,158,158,.4);
+}
+
+button.icon {
+border-radius: 50%;
+font-size: 24px;
+height: 32px;
+margin-left: 0;
+margin-right: 0;
+min-width: 32px;
+width: 32px;
+padding: 0;
+overflow: hidden;
+line-height: normal;
+}
+
+button.icon .material-icons {
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-12px,-12px);
+transform: translate(-12px,-12px);
+line-height: 24px;
+width: 24px;
+vertical-align: middle;
+}
+
+button[disabled] {
+color: rgba(0,0,0,.26);
+cursor: default;
+background-color: transparent;
+}
+.mat-card-content{
+  max-width: 35%;
+  min-width: 20%;
+}
+input {
+font-size: 16px;
+color: #757575;
+background-color: #fafafa;
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+padding: .25em;
+border: 1px solid lightgray;
+border-radius: 2px;
+outline: none;
+}
+
+/* Todo form */
+.todo-form {
+display: flex;
+padding: 1em;
+margin-bottom: 1em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+mat-form-field{
+  width: 70%;
+}
+.todo-form input {
+  flex: 1;
+  font-size: 20px;
+  margin-right: 5px;
+
+}
+
+
+.todo-form input:focus.ng-invalid.ng-dirty {
+   border: 1px solid #dd0031;
+ }
+.todo-form{
+  padding: 23px;
+}
+
+.completed{
+  text-decoration: underline;
+}
+
+/* Todo list */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-toolbar nav ul{
+  display: flex;
+}
+.mat-toolbar nav ul li{
+  margin: 3px;
+  padding: 2px;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.mat-toolbar nav ul li:hover{
+  border-bottom: 1px solid white;
+}
+
+.todo-item {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item:not(:first-child) {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.todo-item .checkbox {
+  margin-right: .25em;
+}
+
+.todo-item.completed .title {
+  text-decoration: line-through;
+}
+
+.todo-item.completed .title,
+.todo-item.completed .material-icons {
+  color: lightgray;
+}
+
+.todo-item input {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.todo-item .actions {
+  margin-left: auto;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.todo-item:hover .actions {
+  opacity: 1;
+}
+

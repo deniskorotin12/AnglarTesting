@@ -1,0 +1,12 @@
+body{
+  margin: 0px;
+  padding: 5px;
+}
+.material-icons{
+  cursor: pointer;
+}
+.mat-card-content{
+  width: 60%;
+  margin: 0 auto;
+  margin-top:44px;
+}
